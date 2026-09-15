@@ -4,15 +4,10 @@ package lab1;
  * Solve the lab1.FizzBuzz challenge.
  */
 class FizzBuzz {
-
-    public static void main(String[] args) {
-        doFizzBuzz();
-    }
-
-    private static void doFizzBuzz() {
+    public static void doFizzBuzz(int n) {
         int i = 1;
 
-        while (i <= 100) {
+        while (i <= n) {
 
             // Find out which numbers divide i.
             boolean divisibleBy3 = i % 3 == 0;
